@@ -1,0 +1,16 @@
+language: ruby
+rvm:
+  - 2.3.1
+
+cache: bundler
+
+services: postgresql
+
+before_script:
+  - psql -c 'create database animapp_test;' -U postgres
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: hpCPFy1N5FaFrK9JR7EodsJvO/xvQCPIn2Bsjdfud7EvH0b3U8Iv2g4Pyq4lW1PM3Nl/URiSjdDEg4xV7ylZERCW5+YYfPi5UsRCp/sxCJuo4gJrqUFvcKsDfUwjCH+SvsF/uez45TajJRky8I3cRpHvYEMpEJojg1RqyaB+VQNxi3y/7B5TAKNsErKaUJGLE/uNSTT3wuk1nWbSYMsfgMQSiZykJ8WCaq0N0AaknqI2zGjrSXXW7lW64d7ErYNznDyDcGQxN/oP0AsIUBnAoRmJu7EUdPgYRkV4ODOXVKP2D7OXBUUXcPVEvRaeRttd5nV51FgxYtx36Ml//hhnLVQRDmXIMguvUuKzbNkm/K/VMQ6TSdMGYbZje9hn92EovbGHhoSmWJDseFrk9EAmpI0ns39HLIibI5Aff4UJv7jVuVjSV1Qel92KeldkjZTJW77yAxHhWQT5Z8pU1wGe1K9teBWMuqGv0iRBEbZwew5NI8+EtYmAd/JpjMxVF7eBr38ZrVfh8nXmy8cHuGZPFin1TzXFcVCKnpQFFRo9lddG0xokKoX+cAghPGubm0D1kUjMoYBzDJTDoaCl73b/QlRCpUo66X+Pe7lvZzD/3ahh1amYyOCkdc5D4aH/d8Gaw34ftKylt6qddgAP8bW8W6qF5tTOQ3Nq9EXSvoaEkPs=
+  app: animapp
