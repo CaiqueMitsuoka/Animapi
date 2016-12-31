@@ -29,6 +29,9 @@ gem 'puma', '~> 3.0'
 # See https://github.com/rails-api/active_model_serializers for more reference.
 gem 'active_model_serializers', '~> 0.10.0'
 
+# Geocode for geographic operations
+# See https://github.com/alexreisner/geocoder for mor reference.
+gem 'geocoder'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
