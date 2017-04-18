@@ -30,8 +30,12 @@ gem 'puma', '~> 3.0'
 gem 'active_model_serializers', '~> 0.10.0'
 
 # Geocode for geographic operations
-# See https://github.com/alexreisner/geocoder for mor reference.
+# See https://github.com/alexreisner/geocoder for more reference.
 gem 'geocoder'
+
+# Devise with token auth
+# See https://github.com/lynndylanhurley/devise_token_auth for more reference.
+gem 'devise_token_auth'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
