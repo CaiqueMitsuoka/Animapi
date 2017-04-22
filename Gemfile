@@ -37,6 +37,10 @@ gem 'geocoder'
 # See https://github.com/lynndylanhurley/devise_token_auth for more reference.
 gem 'devise_token_auth'
 
+# Omniauth for use facebook's oauth
+# See https://github.com/omniauth/omniauth for more reference.
+gem 'omniauth'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
